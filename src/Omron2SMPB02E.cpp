@@ -33,7 +33,7 @@ int Omron2SMPB02E::read_reg16(uint8_t addr)
   
 }
 
-Omron2SMPB02E::Omron2SMPB02E(uint8_t SDO = 1)
+Omron2SMPB02E::Omron2SMPB02E(uint8_t SDO)
 {
   i2c_addr = 0x56;
   if (SDO == 0) i2c_addr = 0x70;
